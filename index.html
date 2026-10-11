@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, interactive-widget=resizes-visual">
+<title>Al Jojacha</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+<div class="page">
+<header class="topbar">
+  <button class="ib" id="menuBtn" aria-label="Menu"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h16"/></svg></button>
+  <div class="brand"><span class="logo" data-svg="logo"></span><div><b>Al Jojacha <em>BETA</em></b><small data-i="tag"></small></div></div>
+  <button class="ib av" id="avBtn" aria-label="Profile"></button>
+</header>
+
+<section class="hero">
+  <div class="ht">
+    <h1><span data-i="h1a"></span><br><i>Al Jojacha</i> <span data-i="h1c"></span></h1>
+    <p data-i="desc"></p>
+    <button class="cta" id="start"><svg class="i" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.2A8 8 0 1 1 21 12z"/></svg><span data-i="start"></span></button>
+  </div>
+  <div class="hv" data-svg="hero"></div>
+</section>
+
+<main class="chatcard"><div class="cin">
+  <div id="chat" aria-live="polite"></div>
+  <div class="inp"><div class="nrm">
+    <button class="sq" id="imgBtn" aria-label="Image"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-8 8"/></svg></button>
+    <input id="q" type="text" autocomplete="off" data-p="ph">
+    <button class="sq" id="mic" aria-label="Mic"><svg class="i" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+    <button class="send" id="send" aria-label="Send"><svg class="i" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+    </div>
+    <div class="vbar"><div id="vlive"></div><div class="vrow"><button class="sq" id="vcancel" aria-label="Cancel"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button><span class="vdot"></span><span id="vtime">0:00</span><div class="wv" id="vwave"></div><button class="send" id="vsend" aria-label="Send"><svg class="i" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></button></div></div>
+  </div>
+</div></main>
+
+<footer class="foot">
+  <div class="fb"><span class="logo" data-svg="logo"></span><div><b>Al Jojacha</b><small data-i="ftag"></small></div></div>
+  <i class="fs" data-i="fs"></i>
+</footer>
+</div>
+
+<div id="scrim"></div>
+<aside id="drawer" aria-label="Settings">
+  <div class="dh"><b data-i="settings"></b><button class="x" id="close" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="scroll">
+    <div class="pc"><div class="big" id="bigAv"></div><div><b id="pcName"></b><small data-i="pcHint"></small></div></div>
+
+    <section><h3 data-i="secF"></h3><nav class="sn" id="sn"></nav></section>
+    <section><h3 data-i="quick"></h3><div id="chips"></div></section>
+    <section><h3 data-i="popT"></h3><div id="pop"></div></section>
+    <section id="sec-hist"><h3 data-i="hist"></h3>
+      <button class="wide" id="newChat"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span data-i="newChat"></span></button>
+      <div id="list"></div>
+    </section>
+    <section id="sec-profile"><h3 data-i="profile"></h3>
+      <label for="nick" data-i="nickL"></label>
+      <input type="text" id="nick" maxlength="20" data-p="nickP" autocomplete="off">
+    </section>
+    <section><h3 data-i="themeL"></h3>
+      <div class="seg" id="tseg"><button data-th="light" data-i="light"></button><button data-th="dark" data-i="dark"></button></div>
+    </section>
+    <section><h3 data-i="langL"></h3>
+      <div class="seg" id="seg"><button data-l="uz">O'zbek</button><button data-l="ru">Русский</button><button data-l="en">English</button></div>
+    </section>
+    <section><h3 data-i="micT"></h3><button class="wide ghost" id="micBtn"><svg class="i" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><span data-i="micB"></span></button><p class="empty" id="micSt"></p></section>
+    <section><button class="wide ghost" id="exitBtn"><svg class="i" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg><span data-i="exit"></span></button></section>
+    <section><button class="wide ghost" id="clearAll"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg><span data-i="clear"></span></button></section>
+  </div>
+</aside>
+
+<div id="gate"><div class="gcard">
+  <span class="logo big" data-svg="logo"></span>
+  <h2 data-i="gateT"></h2>
+  <p data-i="gateD"></p>
+  <input id="gnick" type="text" maxlength="20" data-p="gateP" autocomplete="off">
+  <button class="cta" id="gok"><span data-i="gateB"></span></button>
+  <div class="seg" id="gseg"><button data-l="uz">O'zbek</button><button data-l="ru">Русский</button><button data-l="en">English</button></div>
+</div></div>
+
+<div id="rate"><div class="rcard">
+  <button class="rx" id="rateX" aria-label="Close"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <span class="logo big" data-svg="logo"></span>
+  <h2 data-i="rateT"></h2>
+  <p data-i="rateD"></p>
+  <div class="stars" id="stars"></div>
+  <div class="rlab" id="rlab"></div>
+  <input id="rcom" class="fld" type="text" maxlength="300" data-p="rateP" autocomplete="off">
+  <small class="rn" data-i="rateN"></small>
+  <button class="cta" id="rsend" disabled><span data-i="rateB"></span></button>
+  <button class="rskip" id="rskip" data-i="rateS"></button>
+</div></div>
+<div id="bye"><div class="rcard"><span class="logo big" data-svg="logo"></span><h2 data-i="byeT"></h2><p data-i="byeD"></p><button class="cta" id="byeBack"><span data-i="byeB"></span></button></div></div>
+<div id="toast"></div>
+
+<script src="js/art.js"></script>
+<script src="js/kb.js"></script>
+<script src="js/recipes.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
